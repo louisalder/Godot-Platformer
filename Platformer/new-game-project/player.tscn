@@ -344,11 +344,12 @@ script = ExtResource("1_3jrli")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(11, 2)
 sprite_frames = SubResource("SpriteFrames_gbuvv")
-animation = &"Idle"
+animation = &"Dead"
 autoplay = "Idle"
-frame_progress = 0.296761
+frame_progress = 0.922051
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 6)
 shape = SubResource("RectangleShape2D_1rmk8")
+debug_color = Color(0, 0.6, 0.701961, 0.290196)

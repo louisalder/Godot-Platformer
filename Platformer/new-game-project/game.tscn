@@ -394,11 +394,13 @@ position_smoothing_enabled = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(2, 50)
+position = Vector2(1.99999, 73)
 rotation = 0.0105188
 shape = SubResource("WorldBoundaryShape2D_srdwo")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
 rotation = -7.945e-05
+
+[node name="Forest" type="TileMapLayer" parent="TileMapLayer"]
+use_parent_material = true
 tile_set = SubResource("TileSet_d6o2t")
-format = 2
