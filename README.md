@@ -13,9 +13,15 @@ OS compatibility: MacOS, Windows, Linux
 - Basic physics  
 
 ### 🛠️ Planned Features:
-- Cool animations combining Animated 2D Sprites and shaders
-- Pause UI  
-- More levels with increasing difficulty
+- Cool animations using shaders
+- Pause UI and start menu  
+- Completed levels, with increasing difficulty
+- Moving background elements
+- Enemies with combat
+
+### 🪲Bugs:
+- Player gets stuck in the tree currently
+- Need to fix when a character is jumping and moving left or right simultaneously, this currently doesn't work properly.
 
 ---
 
