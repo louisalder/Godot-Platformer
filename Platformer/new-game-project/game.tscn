@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://d132lvhcxpp3"]
+[gd_scene load_steps=6 format=4 uid="uid://d132lvhcxpp3"]
 
 [ext_resource type="PackedScene" uid="uid://bj57lcf5qait2" path="res://player.tscn" id="1_mig4c"]
 [ext_resource type="Texture2D" uid="uid://b4n8h7pbwnupq" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="2_v1wlc"]
+[ext_resource type="Texture2D" uid="uid://tw0d1vb320vj" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="3_3fg3h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pj2sd"]
 texture = ExtResource("2_v1wlc")
@@ -414,6 +415,16 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_pj2sd")
 
 [node name="Game" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(12, -40)
+texture = ExtResource("3_3fg3h")
+region_enabled = true
+region_rect = Rect2(0, 0, 480, 272)
+
+[node name="Parallax2D" type="Parallax2D" parent="Background"]
 
 [node name="Player" parent="." instance=ExtResource("1_mig4c")]
 position = Vector2(-20, 10)
