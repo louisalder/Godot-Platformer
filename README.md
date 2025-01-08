@@ -8,8 +8,8 @@ The game was created in compatibility mode.
 OS compatibility: MacOS, Windows, Linux
 
 ### ✅ Completed Features:
-- Player movement (run, jump)
-- Basic level design
+- Player movement (run, jump, idle animations)
+- Basic level design elements integrated
 - Basic physics  
 
 ### 🛠️ Planned Features:
@@ -20,8 +20,7 @@ OS compatibility: MacOS, Windows, Linux
 - Enemies with combat
 
 ### 🪲Bugs:
-- Player gets stuck in the tree currently
-- Need to fix when a character is jumping and moving left or right simultaneously, this currently doesn't work properly.
+- Parallax background doesn't function as expected. It should move with the player but it doesn't yet.
 
 ---
 
