@@ -2,6 +2,9 @@
 
 This is my first-ever 2D platformer game created in Godot! It is a work-in progress. I am creating this project as a challenge to myself to learn Godot.
 
+![image](https://github.com/user-attachments/assets/b1a5bf4b-8553-44b0-8150-5765616941c4)
+
+
 # Compatibility
 Godot Version: 4.3
 The game was created in compatibility mode.
