@@ -27,6 +27,8 @@ func _physics_process(delta: float) -> void:
 	# Jump logic
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+
 
 	# Animation if statements
 	if is_on_floor():
@@ -38,6 +40,11 @@ func _physics_process(delta: float) -> void:
 		player.play("Jump")
 
 	_rotate_player()
+	
+func _process(delta):
+	if Input.is_action_just_pressed("Attack") and is_on_floor() and not player.is_playing():
+		player.play("Attack")
+
 
 	# Move the character and resolve collisions
 	move_and_slide()
